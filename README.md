@@ -12,6 +12,7 @@ A full-stack ride-sharing backend application built with **Spring Boot**, **Mong
 - [Getting Started](#-getting-started)
 - [API Documentation](#-api-documentation)
 - [Testing Guide](#-testing-guide)
+- 📮 Postman Collection (Optional Testing)
 - [Screenshots](#-screenshots)
 - [Project Structure](#-project-structure)
 - [Security](#-security)
@@ -268,14 +269,37 @@ http://localhost:8081
 
 ## 🧪 Testing Guide
 
-### Using Postman
+### 📮 Using Postman (Recommended)
 
-#### 1. Import Collection
-1. Download the Postman collection from this repository
-2. Import into Postman
-3. Set environment to "RideShare Local"
+We've included pre-configured Postman collection and environment for easy testing!
 
-#### 2. Test Flow
+#### **Step 1: Import Files**
+
+1. **Download the Postman files** from this repository:
+   - `postman/RideShare_API_Collection.json` - All API requests
+   - `postman/RideShare_Environment.json` - Environment variables
+
+2. **Import into Postman:**
+   - Open Postman
+   - Click **"Import"** button (top-left)
+   - Drag both JSON files or click "Upload Files"
+   - Click **"Import"**
+
+3. **Select Environment:**
+   - Click the environment dropdown (top-right)
+   - Select **"RideShare Local"**
+   - ✅ You're ready to test!
+
+#### **Step 2: What's Included**
+
+The collection includes:
+- ✅ **All API endpoints** pre-configured
+- ✅ **Auto-token extraction** - Tokens save automatically after login
+- ✅ **Environment variables** - `baseUrl`, `userToken`, `driverToken`, `rideId`
+- ✅ **Organized folders** - Auth, User, Driver, Error Cases
+- ✅ **Test scripts** - Automatic variable population
+
+#### **Step 3: Test Flow**
 
 Follow this sequence for complete testing:
 
@@ -466,6 +490,22 @@ Authorization: Bearer {DRIVER_TOKEN}
 
 ```
 rideshare/
+├── postman/                              # 📮 Postman Collection & Environment
+│   ├── RideShare_API_Collection.json    # All API endpoints
+│   └── RideShare_Environment.json       # Environment variables
+├── screenshots/                          # 📸 API Testing Screenshots
+│   ├── 01-register-user.png
+│   ├── 02-register-driver.png
+│   ├── 03-login-user.png
+│   ├── 04-login-driver.png
+│   ├── 05-create-ride.png
+│   ├── 06-get-my-rides.png
+│   ├── 07-pending-rides.png
+│   ├── 08-accept-ride.png
+│   ├── 09-complete-ride.png
+│   ├── 10-validation-error.png
+│   ├── 11-unauthorized.png
+│   └── 12-forbidden.png
 ├── src/
 │   ├── main/
 │   │   ├── java/com/example/rideshare/
@@ -502,12 +542,8 @@ rideshare/
 │   │   └── resources/
 │   │       └── application.properties
 │   └── test/
-├── screenshots/
-│   ├── 01-register-user.png
-│   ├── 02-register-driver.png
-│   ├── ... (all 12 screenshots)
-├── pom.xml
 ├── .gitignore
+├── pom.xml
 └── README.md
 ```
 
@@ -521,7 +557,7 @@ rideshare/
 ```json
 {
   "sub": "username",
-  "role":  "ROLE_DRIVER",
+  "role": "ROLE_USER" or "ROLE_DRIVER",
   "iat": 1638360000,
   "exp": 1638363600
 }
@@ -666,8 +702,52 @@ export JWT_EXPIRATION=3600000
 
 ---
 
+## 🤝 Contributing
 
+Contributions are welcome! Please follow these steps:
 
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 👤 Author
+
+**Gaurav Kumar**
+
+- GitHub: [@Gaurakumar-s](https://github.com/Gaurakumar-s)
+- Repository: [rideshare-backend](https://github.com/Gaurakumar-s/rideshare-backend)
+
+---
+
+## 🙏 Acknowledgments
+
+- Built as part of a Spring Boot learning project
+- Implements industry-standard security practices
+- Follows RESTful API design principles
+- Uses clean architecture patterns
+
+---
+
+## 📞 Support
+
+If you have any questions or issues:
+
+1. Check the [Testing Guide](#-testing-guide) section
+2. Review the [Screenshots](#-screenshots) for expected behavior
+3. Open an issue on GitHub
+4. Contact the maintainer
+
+---
 
 ## 🎯 Future Enhancements
 
@@ -682,5 +762,4 @@ export JWT_EXPIRATION=3600000
 
 ---
 
-
-
+**Made with ❤️ using Spring Boot**
