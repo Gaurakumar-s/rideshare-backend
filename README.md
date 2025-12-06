@@ -446,15 +446,15 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 ### Authentication Flow
 
 #### 1. Register User
-![Register User](screenshots/01-register-user.png)
+![Register User](<img width="1980" height="1664" alt="image" src="https://github.com/user-attachments/assets/6841a782-16af-4b42-bb37-ebde8b1b6fee" />)
 *Successfully registering a new user with ROLE_USER*
 
 #### 2. Register Driver
-![Register Driver](screenshots/02-register-driver.png)
+![Register Driver](<img width="1982" height="1580" alt="image" src="https://github.com/user-attachments/assets/13ff673e-73a5-41e0-8540-7ca72bdefb31" />)
 *Successfully registering a new driver with ROLE_DRIVER*
 
 #### 3. User Login
-![Login User](screenshots/03-login-user.png)
+![Login User](<img width="1970" height="1568" alt="image" src="https://github.com/user-attachments/assets/873f49ed-04d8-43d4-a023-157de569b71d" />)
 *User login returning JWT token - Token is automatically saved to environment variable*
 
 #### 4. Driver Login
@@ -739,6 +739,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
 
