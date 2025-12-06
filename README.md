@@ -437,7 +437,7 @@ This project also includes a ready-to-use Postman setup for testing all APIs.
   8. Ride – Complete
   9. User – My Rides
 
-For a detailed step-by-step guide, see [`POSTMAN.md`](POSTMAN.md).
+For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 
 ---
 
@@ -739,6 +739,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
 
