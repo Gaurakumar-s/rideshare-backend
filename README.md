@@ -451,7 +451,8 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 *Successfully registering a new user with ROLE_USER*
 
 #### 2. Register Driver
-![Register Driver](<img width="1982" height="1580" alt="image" src="https://github.com/user-attachments/assets/13ff673e-73a5-41e0-8540-7ca72bdefb31" />)
+![Register Driver](<img width="1980" height="1648" alt="image" src="https://github.com/user-attachments/assets/edd418bd-67a1-41ff-9184-f648915ba1b4" />
+)
 *Successfully registering a new driver with ROLE_DRIVER*
 
 #### 3. User Login
@@ -740,6 +741,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
 
