@@ -339,24 +339,6 @@ db.rides.deleteMany({})
 
 ---
 
-## 💡 Pro Tips
 
-1. **Use Collection Runner** for regression testing
-2. **Export updated collection** if you add custom requests
-3. **Share collection link** with team members
-4. **Create test assertions** in Scripts tab for automated testing
-5. **Use Pre-request Scripts** for dynamic data generation
-
----
-
-## 🎯 Next Steps
-
-After testing:
-1. ✅ Verify all 12 screenshots are captured
-2. ✅ Add screenshots to `screenshots/` folder
-3. ✅ Update README if you modify any endpoints
-4. ✅ Commit everything to Git
-
----
 
 **Happy Testing! 🚀**
