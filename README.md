@@ -419,6 +419,27 @@ Authorization: Bearer {DRIVER_TOKEN}
 ```
 
 ---
+## 📮 Postman Collection (Optional Testing)
+
+This project also includes a ready-to-use Postman setup for testing all APIs.
+
+- Import the collection from: `postman/RideShare_API_Collection.json`
+- Import the environment from: `postman/RideShare_Environment.json`
+- Select the **RideShare Local** environment in Postman
+- Run the requests in this order:
+  1. Auth – Register User
+  2. Auth – Register Driver
+  3. Auth – Login User
+  4. Auth – Login Driver
+  5. User – Ride Create
+  6. Driver – Pending Rides
+  7. Driver – Accept Ride
+  8. Ride – Complete
+  9. User – My Rides
+
+For a detailed step-by-step guide, see [`POSTMAN.md`](POSTMAN.md).
+
+---
 
 ## 📸 Screenshots
 
@@ -545,6 +566,7 @@ rideshare/
 ├── .gitignore
 ├── pom.xml
 └── README.md
+└── POSTMAN_GUIDE.md
 ```
 
 ---
@@ -702,52 +724,8 @@ export JWT_EXPIRATION=3600000
 
 ---
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
----
-
-## 👤 Author
-
-**Gaurav Kumar**
-
-- GitHub: [@Gaurakumar-s](https://github.com/Gaurakumar-s)
-- Repository: [rideshare-backend](https://github.com/Gaurakumar-s/rideshare-backend)
-
----
-
-## 🙏 Acknowledgments
-
-- Built as part of a Spring Boot learning project
-- Implements industry-standard security practices
-- Follows RESTful API design principles
-- Uses clean architecture patterns
-
----
-
-## 📞 Support
-
-If you have any questions or issues:
-
-1. Check the [Testing Guide](#-testing-guide) section
-2. Review the [Screenshots](#-screenshots) for expected behavior
-3. Open an issue on GitHub
-4. Contact the maintainer
-
----
 
 ## 🎯 Future Enhancements
 
@@ -762,4 +740,5 @@ If you have any questions or issues:
 
 ---
 
-**Made with ❤️ using Spring Boot**
+
+
