@@ -31,3 +31,21 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### macOS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+ehthumbs.db
+
+### Logs ###
+*.log
+
+### Environment Variables (if you add .env file) ###
+.env
+.env.local
+
+# NOTE: We DO want to commit these:
+# - postman/ folder (contains collection and environment)
+# - screenshots/ folder (contains API testing screenshots)
