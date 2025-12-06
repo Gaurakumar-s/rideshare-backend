@@ -447,22 +447,31 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 
 
 #### 1. Register User
-<img width="1988" height="1570" alt="image" src="https://github.com/user-attachments/assets/659c1940-aa1c-4427-b984-abc41e35c868" />
+![Register User](<img width="1978" height="1642" alt="image" src="https://github.com/user-attachments/assets/3d3b7b8f-2582-48a9-84bd-1dcac5a8c956" />
+)
 
 *Successfully registering a new user with ROLE_USER*
 
+---
+
 #### 2. Register Driver
-![Register Driver](<img width="1980" height="1648" alt="image" src="https://github.com/user-attachments/assets/edd418bd-67a1-41ff-9184-f648915ba1b4" />
-)
+![Register Driver](<img width="1980" height="1636" alt="image" src="https://github.com/user-attachments/assets/8e5c3639-37e4-47ba-845e-26f0d4d8b714" />)
+
 *Successfully registering a new driver with ROLE_DRIVER*
 
+---
+
 #### 3. User Login
-![Login User](<img width="1970" height="1568" alt="image" src="https://github.com/user-attachments/assets/873f49ed-04d8-43d4-a023-157de569b71d" />)
-*User login returning JWT token - Token is automatically saved to environment variable*
+![Login User](<img width="1982" height="1564" alt="image" src="https://github.com/user-attachments/assets/a727447d-6bcd-453c-aa8e-5e9373cc2b3a" />)
+
+*User login returning JWT token — Token is automatically saved to environment variable*
+
+---
 
 #### 4. Driver Login
 ![Login Driver](screenshots/04-login-driver.png)
-*Driver login returning JWT token - Token is automatically saved to environment variable*
+
+*Driver login returning JWT token — Token is automatically saved to environment variable*
 
 ---
 
@@ -470,10 +479,14 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 
 #### 5. Create Ride Request
 ![Create Ride](screenshots/05-create-ride.png)
+
 *User creates a ride request with pickup and drop locations*
+
+---
 
 #### 6. View My Rides
 ![Get My Rides](screenshots/06-get-my-rides.png)
+
 *User views their ride history filtered by userId*
 
 ---
@@ -482,14 +495,21 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 
 #### 7. View Pending Rides
 ![Pending Rides](screenshots/07-pending-rides.png)
+
 *Driver views all rides with REQUESTED status*
+
+---
 
 #### 8. Accept Ride
 ![Accept Ride](screenshots/08-accept-ride.png)
-*Driver accepts a ride - Status changes to ACCEPTED and driverId is assigned*
+
+*Driver accepts a ride — Status changes to ACCEPTED and driverId is assigned*
+
+---
 
 #### 9. Complete Ride
 ![Complete Ride](screenshots/09-complete-ride.png)
+
 *Ride is marked as COMPLETED*
 
 ---
@@ -498,15 +518,22 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 
 #### 10. Validation Error (400)
 ![Validation Error](screenshots/10-validation-error.png)
+
 *Validation error when required fields are empty or invalid*
+
+---
 
 #### 11. Unauthorized (401)
 ![Unauthorized](screenshots/11-unauthorized.png)
+
 *Unauthorized error when no authentication token is provided*
+
+---
 
 #### 12. Forbidden (403)
 ![Forbidden](screenshots/12-forbidden.png)
-*Forbidden error when user with wrong role tries to access endpoint (USER trying to access DRIVER endpoint)*
+
+*Forbidden error when a user with the wrong role tries to access a protected endpoint*
 
 ---
 
@@ -742,6 +769,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
 
