@@ -521,7 +521,7 @@ rideshare/
 ```json
 {
   "sub": "username",
-  "role": "ROLE_USER" or "ROLE_DRIVER",
+  "role":  "ROLE_DRIVER",
   "iat": 1638360000,
   "exp": 1638363600
 }
@@ -681,5 +681,6 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
