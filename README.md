@@ -445,8 +445,9 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 
 ### Authentication Flow
 
+
 #### 1. Register User
-![Register User](<img width="1980" height="1664" alt="image" src="https://github.com/user-attachments/assets/6841a782-16af-4b42-bb37-ebde8b1b6fee" />)
+![Register User](<img width="994" height="785" alt="Screenshot 2025-12-07 at 12 43 11 AM" src="https://github.com/user-attachments/assets/51d42bbb-5f97-4de2-8cba-9cacd4200ff1" />)
 *Successfully registering a new user with ROLE_USER*
 
 #### 2. Register Driver
@@ -739,6 +740,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
 
