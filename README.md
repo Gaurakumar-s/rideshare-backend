@@ -12,6 +12,7 @@ A full-stack ride-sharing backend application built with **Spring Boot**, **Mong
 - [Getting Started](#-getting-started)
 - [API Documentation](#-api-documentation)
 - [Testing Guide](#-testing-guide)
+- 📮 Postman Collection (Optional Testing)
 - [Screenshots](#-screenshots)
 - [Project Structure](#-project-structure)
 - [Security](#-security)
@@ -268,14 +269,37 @@ http://localhost:8081
 
 ## 🧪 Testing Guide
 
-### Using Postman
+### 📮 Using Postman (Recommended)
 
-#### 1. Import Collection
-1. Download the Postman collection from this repository
-2. Import into Postman
-3. Set environment to "RideShare Local"
+We've included pre-configured Postman collection and environment for easy testing!
 
-#### 2. Test Flow
+#### **Step 1: Import Files**
+
+1. **Download the Postman files** from this repository:
+   - `postman/RideShare_API_Collection.json` - All API requests
+   - `postman/RideShare_Environment.json` - Environment variables
+
+2. **Import into Postman:**
+   - Open Postman
+   - Click **"Import"** button (top-left)
+   - Drag both JSON files or click "Upload Files"
+   - Click **"Import"**
+
+3. **Select Environment:**
+   - Click the environment dropdown (top-right)
+   - Select **"RideShare Local"**
+   - ✅ You're ready to test!
+
+#### **Step 2: What's Included**
+
+The collection includes:
+- ✅ **All API endpoints** pre-configured
+- ✅ **Auto-token extraction** - Tokens save automatically after login
+- ✅ **Environment variables** - `baseUrl`, `userToken`, `driverToken`, `rideId`
+- ✅ **Organized folders** - Auth, User, Driver, Error Cases
+- ✅ **Test scripts** - Automatic variable population
+
+#### **Step 3: Test Flow**
 
 Follow this sequence for complete testing:
 
@@ -395,6 +419,27 @@ Authorization: Bearer {DRIVER_TOKEN}
 ```
 
 ---
+## 📮 Postman Collection (Optional Testing)
+
+This project also includes a ready-to-use Postman setup for testing all APIs.
+
+- Import the collection from: `postman/RideShare_API_Collection.json`
+- Import the environment from: `postman/RideShare_Environment.json`
+- Select the **RideShare Local** environment in Postman
+- Run the requests in this order:
+  1. Auth – Register User
+  2. Auth – Register Driver
+  3. Auth – Login User
+  4. Auth – Login Driver
+  5. User – Ride Create
+  6. Driver – Pending Rides
+  7. Driver – Accept Ride
+  8. Ride – Complete
+  9. User – My Rides
+
+For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
+
+---
 
 ## 📸 Screenshots
 
@@ -466,6 +511,22 @@ Authorization: Bearer {DRIVER_TOKEN}
 
 ```
 rideshare/
+├── postman/                              # 📮 Postman Collection & Environment
+│   ├── RideShare_API_Collection.json    # All API endpoints
+│   └── RideShare_Environment.json       # Environment variables
+├── screenshots/                          # 📸 API Testing Screenshots
+│   ├── 01-register-user.png
+│   ├── 02-register-driver.png
+│   ├── 03-login-user.png
+│   ├── 04-login-driver.png
+│   ├── 05-create-ride.png
+│   ├── 06-get-my-rides.png
+│   ├── 07-pending-rides.png
+│   ├── 08-accept-ride.png
+│   ├── 09-complete-ride.png
+│   ├── 10-validation-error.png
+│   ├── 11-unauthorized.png
+│   └── 12-forbidden.png
 ├── src/
 │   ├── main/
 │   │   ├── java/com/example/rideshare/
@@ -502,13 +563,10 @@ rideshare/
 │   │   └── resources/
 │   │       └── application.properties
 │   └── test/
-├── screenshots/
-│   ├── 01-register-user.png
-│   ├── 02-register-driver.png
-│   ├── ... (all 12 screenshots)
-├── pom.xml
 ├── .gitignore
+├── pom.xml
 └── README.md
+└── POSTMAN_GUIDE.md
 ```
 
 ---
@@ -681,4 +739,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
+
+
 
