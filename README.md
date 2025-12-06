@@ -447,22 +447,19 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 
 
 #### 1. Register User
-![Register User](<img width="1978" height="1642" alt="image" src="https://github.com/user-attachments/assets/3d3b7b8f-2582-48a9-84bd-1dcac5a8c956" />
-)
+![Register User](https://github.com/user-attachments/assets/659c1940-aa1c-4427-b984-abc41e35c868?raw=1)
 
 *Successfully registering a new user with ROLE_USER*
 
 ---
 
 #### 2. Register Driver
-![Register Driver](<img width="1980" height="1636" alt="image" src="https://github.com/user-attachments/assets/8e5c3639-37e4-47ba-845e-26f0d4d8b714" />)
-
-*Successfully registering a new driver with ROLE_DRIVER*
+![Register Driver](https://github.com/user-attachments/assets/edd418bd-67a1-41ff-9184-f648915ba1b4?raw=1)
 
 ---
 
 #### 3. User Login
-![Login User](<img width="1982" height="1564" alt="image" src="https://github.com/user-attachments/assets/a727447d-6bcd-453c-aa8e-5e9373cc2b3a" />)
+![Login User](https://github.com/user-attachments/assets/873f49ed-04d8-43d4-a023-157de569b71d?raw=1)
 
 *User login returning JWT token — Token is automatically saved to environment variable*
 
@@ -769,6 +766,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
 
