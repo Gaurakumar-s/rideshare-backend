@@ -466,7 +466,7 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 ---
 
 #### 4. Driver Login
-![Login Driver](screenshots/04-login-driver.png)
+![Login Driver](https://github.com/user-attachments/assets/613597c2-95d7-4052-acba-65b4eab5831a?raw=1)
 
 *Driver login returning JWT token — Token is automatically saved to environment variable*
 
@@ -475,14 +475,14 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 ### User Ride Flow
 
 #### 5. Create Ride Request
-![Create Ride](screenshots/05-create-ride.png)
+![Create Ride](https://github.com/user-attachments/assets/ed2e2b8b-3dd5-4460-9c05-7d812f36e13d?raw=1)
 
 *User creates a ride request with pickup and drop locations*
 
 ---
 
 #### 6. View My Rides
-![Get My Rides](screenshots/06-get-my-rides.png)
+![Get My Rides](https://github.com/user-attachments/assets/8f865afe-f738-4788-9176-839550a9ef03?raw=1)
 
 *User views their ride history filtered by userId*
 
@@ -491,21 +491,21 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 ### Driver Ride Flow
 
 #### 7. View Pending Rides
-![Pending Rides](screenshots/07-pending-rides.png)
+![Pending Rides](https://github.com/user-attachments/assets/1b72902d-36d0-4e09-8b9c-a6b60397ec1a?raw=1)
 
 *Driver views all rides with REQUESTED status*
 
 ---
 
 #### 8. Accept Ride
-![Accept Ride](screenshots/08-accept-ride.png)
+![Accept Ride](https://github.com/user-attachments/assets/a3ebadeb-74c4-4e2f-be2a-825b2e55d3d7?raw=1)
 
 *Driver accepts a ride — Status changes to ACCEPTED and driverId is assigned*
 
 ---
 
 #### 9. Complete Ride
-![Complete Ride](screenshots/09-complete-ride.png)
+![Complete Ride](https://github.com/user-attachments/assets/db1ac09f-a64b-48c5-a089-57568e726ace?raw=1)
 
 *Ride is marked as COMPLETED*
 
@@ -514,23 +514,24 @@ For a detailed step-by-step guide, see [`POSTMAN_GUIDE.md`](POSTMAN_GUIDE.md).
 ### Error Handling
 
 #### 10. Validation Error (400)
-![Validation Error](screenshots/10-validation-error.png)
+![Validation Error](https://github.com/user-attachments/assets/c8687731-4d38-47e5-b2e9-56828feac9fd?raw=1)
 
 *Validation error when required fields are empty or invalid*
 
 ---
 
 #### 11. Unauthorized (401)
-![Unauthorized](screenshots/11-unauthorized.png)
+![Unauthorized](https://github.com/user-attachments/assets/a45ff544-e751-4f92-9aef-e06388ee98ed?raw=1)
 
 *Unauthorized error when no authentication token is provided*
 
 ---
 
-#### 12. Forbidden (403)
-![Forbidden](screenshots/12-forbidden.png)
+#### 12. Forbidden (401)
+![Forbidden](https://github.com/user-attachments/assets/59ad0d15-7604-4d87-97c2-6deca7c973e0?raw=1)
 
 *Forbidden error when a user with the wrong role tries to access a protected endpoint*
+
 
 ---
 
@@ -766,6 +767,7 @@ export JWT_EXPIRATION=3600000
 - [ ] Create mobile app integration endpoints
 
 ---
+
 
 
 
